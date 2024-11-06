@@ -1,0 +1,346 @@
+
+/* register Login  */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: Arial;
+} */
+
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right:0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(10px); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  width: 400px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #005393;
+  height: 40px;
+  border-bottom: 1px double black;
+  text-shadow:0 0 5px white,    
+  0 0 10px white,   
+  0 0 15px white,   
+  0 0 20px white;  
+}
+
+.form-group {
+   margin-bottom: 15px;
+  text-align: left;
+  margin-right:  22px ; 
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.reg-btn{
+  width: 100%;
+  padding: 15px;
+  background-color: #127AB5;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 12px; 
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #127AB5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+button:hover {
+  background-color: #005393;
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; 
+}
+
+
+.logo{
+  position: absolute; 
+  top: 0px;
+  left: 0px;
+  width: 150px;
+  z-index: 1;
+}
+
+a {
+  font-size: 14px;
+  color: white;
+  padding-top: 8px;
+  text-decoration: none;
+}
+
+a:hover{
+color: black;
+}
+
+/* Home.css */
+.container {
+  min-height: 100vh;
+  background-color: white;
+}
+
+/* #1e3a8a */
+.header {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 30px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  top: 0;
+}
+
+.nav-links a {
+  margin-right: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.logout-button {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.logout-icon {
+  fill: none;
+  stroke: white;
+  width: 100%;
+  height: 100%;
+}
+
+
+.main-content {
+  margin-top: 200px;
+  width: 100%;
+}
+
+.user-info {
+  background-color: #f3f4f6;
+  padding: 5px;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.user-info p {
+  font-weight: bold;
+}
+
+/* Tagging Section */
+.tagging-section {
+  border: 1px solid #d1d5db;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.tagging-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.textareas {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.text-1, .text-2 {
+  max-width: 2000px;
+  min-width: 200px;
+  width: 100%;
+  height: 15rem;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  resize:none;
+  
+}
+
+.buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.buttons button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  background-color: white;
+  cursor: pointer;
+  color: black;
+  border: 1px solid black;
+}
+
+.buttons .tag-sentence {
+  background-color: #10b981;
+  color: white;
+  border: none;
+}
+
+.buttons .save {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+}
+
+/* Tag List */
+.tag-list {
+  border-top: 1px solid #d1d5db;
+  border-bottom: 1px solid #d1d5db;
+  padding: 1rem 0;
+}
+
+.tag-list p {
+  font-size: large;
+}
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+/* Tag Colors */
+.tag-green {
+  background-color: #86efac;
+  color: black;
+}
+
+.tag-blue {
+  background-color: #93c5fd;
+  color: black;
+}
+
+.tag-orange {
+  background-color: #fdba74;
+  color: black;
+}
+
+.tag-red {
+  background-color: #fca5a5;
+  color: black;
+}
+
+.tag-teal {
+  background-color: #5eead4;
+  color: black;
+}
+
+.tag-yellow {
+  background-color: #fde047;
+  color: black;
+}
+
+.tag-light-yellow {
+  background-color: #fef9c3;
+  color: black;
+}
+
+.tag-purple {
+  background-color: #6d28d9;
+  color: white;
+}
+
+.tag-dark-yellow {
+  background-color: #facc15;
+  color: black;
+}
+
+.tag-dark-blue {
+  background-color: #3b82f6;
+  color: black;
+}
+
+.tag-dark-orange {
+  background-color: #fb923c;
+  color: black;
+}
+
+.tag-dark-red {
+  background-color: #ef4444;
+  color: black;
+}
+
+.tag-dark-teal {
+  background-color: #14b8a6;
+  color: black;
+}
+
+.tag-dark-yellow {
+  background-color: #eab308;
+  color: black;
+}
